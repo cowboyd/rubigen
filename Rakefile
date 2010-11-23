@@ -16,6 +16,8 @@ Hoe.spec 'rubigen' do
   extra_dev_deps << ['mocha','>= 0.9.8']
   extra_dev_deps << ['cucumber','>= 0.6.2']
   extra_dev_deps << ['shoulda','>= 2.10.3']
+  extra_dev_deps << ['rspec', '>= 2.0.0']
+  extra_dev_deps << ['hoe-git','>= 1.3.0']
 end
 
 require 'newgem/tasks' rescue nil # load /tasks/*.rake
