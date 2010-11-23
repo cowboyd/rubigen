@@ -1,13 +1,10 @@
 $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
-begin
-  # if you are using rubygems, fix to 2.3.5
-  gem 'activesupport', '~> 2.3.5'
-rescue
-end
-
-require 'active_support' 
+require 'active_support/core_ext/class/inheritable_attributes'
+require 'active_support/core_ext/class/attribute_accessors'
+require 'active_support/core_ext/object/blank'
+require 'active_support/core_ext/string/inflections'
 
 module RubiGen
   VERSION = '1.5.5'
